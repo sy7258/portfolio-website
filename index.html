@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Sneha Yadav</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Sneha Yadav</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="togglemenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="togglemenu()">About</a></li>
+                <li><a href="#experience" onclick="togglemenu()">Experience</a></li>
+                <li><a href="#projects" onclick="togglemenu()">Projects</a></li>
+                <li><a href="#contact" onclick="togglemenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="image.jpeg" alt="Sneha Yadav Profile Picture" class="profile-pic">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Sneha Yadav</h1>
+            <p class="section__text__p2">Frontend Developer | Aspiring SDE & Data Analyst</p>
+            <div class="btn-container">
+                <button 
+                class="btn btn-color-2" 
+                onclick="window.open('SNEHA_RESUME.pdf','_blank')">Download CV</button>
+                <button 
+                class="btn btn-color-1" 
+                onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="linkedin.png" alt="My LinkedIn Profile" class="icon" onclick="window.open('https://linkedin.com/in/sneha-yadav-b9548b258/', '_blank')">
+                <img src="github.png" alt="My Github Profile" class="icon" onclick="window.open('https://github.com/sy7258', '_blank')">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="about_image.jpg" alt="Profile Picture"
+                class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img 
+                        src="experience.png" alt="Experience icon"
+                        class="icon">
+                        <h3>Experience</h3>
+                        <p>Project Management and Inventory Management <br>Wintrack Surveyors | Jun 2023 - Jul 2023</p>
+                    </div>
+                    <div class="details-container">
+                        <img 
+                        src="education.png" alt="Education icon"
+                        class="icon">
+                        <h3>Education</h3>
+                        <p>B.Tech Computer Science and Engineering<br>SRM University</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Hey, I'm a Computer Science student with a passion for building meaningful digital experiences. I genuinely enjoy creating things on the web — from clean, responsive interfaces to projects that explore cutting-edge technologies like generative AI. My interest in data analysis also drives me to leverage insights from data to improve systems and make smarter, data-driven decisions.<br><br>
+
+                        I believe that learning is most effective when it’s hands-on, whether that’s developing a full-featured UI, experimenting with new technologies, or applying AI tools to solve real-world problems. Right now, I’m focusing on growing as a frontend developer, but I’m also eager to expand my skillset in AI and data analysis.<br><br>
+                        
+                        Ultimately, I’m working towards a career that blends creativity, problem-solving, and technology to create impactful solutions that are user-friendly and accessible. I’m excited about what the future holds, and I’m always looking for opportunities to contribute to innovative projects that make a difference.</p>
+                </div>
+            </div>
+        </div>
+        <img 
+        src="arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow" 
+        onclick="location.href='./#experience'">
+
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>React JS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Programming Languages & DataBases</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>Python</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>MySQL</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Tools & Technologies</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>Github</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>Langchain</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>Pinecone</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>Open AI</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Core Skills</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>Data Structure & Algorithms</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>Data Analysis</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Languages Known</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>English</h3>
+                                <p>Fluent</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>Hindi</h3>
+                                <p>Native</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="checkmark.png" 
+                            alt="Experience icon" 
+                            class="icon">
+                            <div>
+                                <h3>Tamil</h3>
+                                <p>Native</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+        <img 
+        src="arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow" 
+        onclick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="project-1.png" alt="Project 1" 
+                    class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">To-Do List</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/sy7258/my-todo-app', '_blank')"
+                    >
+                        Github
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="project-2.png" alt="Project 2" 
+                    class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Rock Paper Scissor</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/sy7258/rock_paper_scissors', '_blank')"
+                    >
+                        Github
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="project-3.png" alt="Project 3" 
+                    class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Medical Chatbot</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/sy7258/End-to-end-Medical-Chatbot', '_blank')"
+                    >
+                        Github
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
+        <img 
+        src="arrow.png" 
+        alt="Arrow icon" 
+        class="icon arrow" 
+        onclick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+        <p class="section__text">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img 
+                src="email.png" 
+                alt="Email icon"
+                class="icon contact-icon"
+                 >
+                <p><a href="https://mail.google.com/mail/?view=cm&fs=1&to=snehayadav2604@gmail.com" target="_blank">snehayadav2604@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img 
+                src="linkedin.png" 
+                alt="LinkedIn icon"
+                class="icon contact-icon"
+                 >
+                <p><a href="https://www.linkedin.com/in/sneha-yadav-b9548b258/" target="_blank">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p> &#169;2025</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

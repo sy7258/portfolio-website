@@ -1,0 +1,3 @@
+# My Latest Portfolio Website
+
+Welcome to my personal portfolio website! This site showcases my work, skills, and projects in a clean, responsive design. Built using **HTML**, **CSS**, and **JavaScript**, it features a mobile-first approach with **Media Queries** for seamless adjustments across various screen sizes. The website includes a **hamburger menu** for easy navigation on smaller screens and a professional layout that highlights my profile, experience, and contact information.
